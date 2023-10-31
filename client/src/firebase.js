@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBaQmTCXdoQkz9pCTyFwrJkRhAbhARbt64",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "estate-ecommerce-app.firebaseapp.com",
   projectId: "estate-ecommerce-app",
   storageBucket: "estate-ecommerce-app.appspot.com",
   messagingSenderId: "986025382240",
-  appId: "1:986025382240:web:5c7f06db6fab4ac86c8e05"
+  appId: "1:986025382240:web:8b82b176d1897d826c8e05"
 };
 
 // Initialize Firebase
