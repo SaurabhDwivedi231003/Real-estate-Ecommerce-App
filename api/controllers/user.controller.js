@@ -16,11 +16,11 @@ export const updateUser = async (req, res, next) => {
       req.body.password = bcryptjs.hashSync(req.body.password, 10);
     }
 
-    const updatedUser = await User.findByIdAndUpdate(  //findeByIdAndUpdate mean data will be accessed from database.
+    const updatedUser = await User.findByIdAndUpdate(
       req.params.id,
       {
-        $set: {                          // set method ki wjh se user sirf below data ko change jr pyega , agr ye specify ni kiya toh random user khud ko admin bna lega aur hack krlega
-          username: req.body.username,   
+        $set: {
+          username: req.body.username,
           email: req.body.email,
           password: req.body.password,
           avatar: req.body.avatar,
@@ -32,7 +32,11 @@ export const updateUser = async (req, res, next) => {
     const { password, ...rest } = updatedUser._doc;
 
     res.status(200).json(rest);
+
   } catch (error) {
+    
     next(error);
+    next(errorHandler(500, error.message));
+
   }
 };
