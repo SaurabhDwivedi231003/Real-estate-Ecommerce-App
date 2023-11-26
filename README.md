@@ -1,4 +1,4 @@
-# Real Estate E-commerce App
+## Real Estate E-commerce App
 
 Welcome to the Real Estate E-commerce App, a feature-rich web application developed using the cutting-edge MERN (MongoDB, Express.js, React, Node.js) stack and stylized with the modern aesthetics of Tailwind CSS.
 
@@ -32,21 +32,21 @@ Revolutionize your real estate experience with our dynamic e-commerce platform. 
 - **React Redux:** State container for React apps.
 - **Redux Persist:** State persistence for Redux.
 
-## Getting Started
+# Getting Started
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/real-estate-app.git
    cd real-estate-app
 
-# Install backend dependencies
+## Install backend dependencies
 cd api && npm install
 
-# Install frontend dependencies
+## Install frontend dependencies
 cd client && npm install
 
-# Start the backend server
+## Start the backend server
 cd api && npm run dev
 
-# Start the frontend development server
+## Start the frontend development server
 cd client && npm run dev
