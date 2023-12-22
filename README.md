@@ -36,7 +36,7 @@ Revolutionize your real estate experience with our dynamic e-commerce platform. 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/real-estate-app.git
+   git clone https://github.com/SaurabhDwivedi231003/Real-estate-Ecommerce-App.git
    cd real-estate-app
 
 ## Install backend dependencies
